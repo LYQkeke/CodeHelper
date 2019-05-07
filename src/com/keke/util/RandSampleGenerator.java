@@ -16,4 +16,20 @@ public class RandSampleGenerator {
         }
         return arr;
     }
+
+    public static int[][] generateRandomIntegerMatrix(int maxRowColSize, boolean squre){
+        int[][] result;
+        if (squre){
+            int size = (int)(Math.random()*maxRowColSize+1);
+            result  = new int[size][size];
+        }else {
+            result = new int[(int)(Math.random()*maxRowColSize+1)][(int)(Math.random()*maxRowColSize+1)];
+        }
+        for (int i = 0; i < result.length; i++) {
+            for (int j = 0; j < result[0].length; j++) {
+                result[i][j] = (int)(Math.random()*10);
+            }
+        }
+        return result;
+    }
 }
