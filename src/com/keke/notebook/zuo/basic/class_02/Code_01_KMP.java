@@ -39,7 +39,7 @@ public class Code_01_KMP {
         int cn = 0;
         while (pos<chs.length){
             if (chs[pos-1]==chs[cn]){
-                next[pos++] = cn + 1;
+                next[pos++] = ++cn;
             }else if (cn>0){
                 cn = next[cn];
             }else {
