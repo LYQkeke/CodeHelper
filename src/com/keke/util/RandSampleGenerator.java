@@ -25,7 +25,7 @@ public class RandSampleGenerator {
     }
 
     /**
-     * 生成随机二维矩阵
+     * 生成随机二维矩阵 整型的值在0-9之间
      * @param maxRowColSize
      * @param squre 是否生成方阵
      * @return
