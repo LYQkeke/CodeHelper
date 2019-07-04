@@ -25,7 +25,7 @@ public class Code_136 {
         int l = n;
         int r = n;
         solution(0,0, l, r, new StringBuilder());
-        Collections.sort(ansList);
+//        Collections.sort(ansList);
         StringBuilder sb = new StringBuilder();
         for (String s: ansList){
             sb.append(","+s);
